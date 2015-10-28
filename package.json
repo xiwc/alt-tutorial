@@ -12,7 +12,7 @@
     "reactify": "^0.17.1"
   },
   "scripts": {
-    "build": "browserify -t [reactify --es6] src/App.jsx > build/app.js",
+    "build": "browserify -t [reactify --es6] src/App.jsx --debug | exorcist build/app.js.map > build/app.js",
     "start": "npm run build && open 'index.html' "
   },
   "author": "Josh Perez <josh@goatslacker.com>",
